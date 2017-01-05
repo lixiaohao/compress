@@ -9,13 +9,18 @@ package com.lixiaohao.compress.zip.string;
  * @Company
  */
 public class Test {
+
+    public void compressToByte(){
+        String entityName = "test3.txt";
+        byte[] strByte = CompressStringUtils.compressToByte(entityName,StringFinal.pageString);
+    }
+
     @org.junit.Test
-    public void unZip(){
+    public void unCompress(){
         String entityName = "test3.txt";
        byte[] strByte = CompressStringUtils.compressToByte(entityName,StringFinal.pageString);
         byte[] unCompress = CompressStringUtils.unCompressByteToByte(strByte);
         System.out.println(new String(unCompress));
-
     }
 
 

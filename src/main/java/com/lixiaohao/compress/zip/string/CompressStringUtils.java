@@ -1,6 +1,5 @@
 package com.lixiaohao.compress.zip.string;
 
-import org.junit.Test;
 
 import java.io.*;
 import java.util.zip.ZipEntry;
